@@ -20,5 +20,5 @@ jobs:
         PORT: ${{ secrets.PORT }}
         PASSWORD: ${{ secrets.PASSWORD }}
       with:
-        source: "public/*"
+        source: "blog/*"
         target: "/var/www/blog"
