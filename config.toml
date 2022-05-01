@@ -1,4 +1,4 @@
-baseURL = 'http://www.ozeliurs.com/'
+baseURL = 'http://blog.ozeliurs.com/'
 languageCode = 'fr-fr'
 title = "Ozeliurs' Website"
 theme = "hugo-theme-stack"
