@@ -1,0 +1,23 @@
+baseURL = 'http://www.ozeliurs.com/'
+languageCode = 'fr-fr'
+title = "Ozeliurs' Website"
+theme = "hugo-theme-stack"
+
+[menu]
+[[menu.main]]
+name = "Projets"
+url = "/projects"
+weight = 1
+
+[[menu.main]]
+name = "Guides"
+url = "/guides"
+weight = 2
+
+[params]
+mainSections = ['projects', 'guides']
+
+[params.sidebar.avatar]
+enabled = true
+local = true
+src = "pp.webp"
