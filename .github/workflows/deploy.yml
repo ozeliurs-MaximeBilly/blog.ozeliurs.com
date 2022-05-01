@@ -10,7 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
+
+    - name: Update theme
+        run: git submodule update --init --recursive
+
+    - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.64.0"
+    
+    - name: Build
+        run: hugo --minify -d blog
 
     - name: Copy repository contents via scp
       uses: appleboy/scp-action@master
@@ -22,3 +33,4 @@ jobs:
       with:
         source: "blog/*"
         target: "/var/www"
+        
