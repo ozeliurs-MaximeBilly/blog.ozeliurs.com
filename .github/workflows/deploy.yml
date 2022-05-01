@@ -21,4 +21,4 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
       with:
         source: "blog/*"
-        target: "/var/www/blog"
+        target: "/var/www"
