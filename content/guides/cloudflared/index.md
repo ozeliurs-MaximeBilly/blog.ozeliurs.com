@@ -5,27 +5,27 @@ draft: false
 image: "mini.jpg"
 ---
 
-# Set up cloudflared tunnels
+# Installer & Configurer cloudflared tunnels
 
-## Install .deb file
+## Installer le fichier .deb
 
 `$ wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb`
 
 `$ dpkg -i cloudflared-linux-amd64.deb`
 
-## Authenticate cloudflared
+## Authentifier cloudflared
 
 `$ cloudflared tunnel login`
 
-## Create a Tunnel
+## Creer un tunnel
 
 `$ cloudflared tunnel create <NAME>`
 
-## Add subdomains
+## Ajouter des sousdomains
 
 `$ cloudflared tunnel route dns <UUID or NAME> <hostname>`
 
-## Configure cloudflared
+## Configurer cloudflared
 
 `$ nano /etc/cloudflared/config.yml`
 
@@ -41,11 +41,11 @@ image: "mini.jpg"
         service: ssh://localhost:22
     - service: http_status:404
 
-## Validate ingress rules
+## Valider les règles ingress
 
 `$ cloudflared tunnel ingress validate`
 
-## Install as a service
+## Installer cloudflared comme un service
 
 `$ cloudflared service install`
 
@@ -53,7 +53,7 @@ image: "mini.jpg"
 
 `$ systemctl status cloudflared`
 
-## Check tunnel status
+## Verifier l'etat du tunnel
 
 `$ cloudflared tunnel info`
 
