@@ -15,13 +15,21 @@ Le service est composé principalement de 3 parties:
 
 ## Installation
 
-### Brew
+### Docker Compose
 
-`brew install traefik`
-
-### apt
-
-`apt install traefik -y`
+```yml
+version: '3'
+services:
+  traefik:
+    image: traefik:latest
+    container_name: traefik
+    restart: always
+    volumes:
+      - ./traefik.yml:/etc/traefik/traefik.yml
+    ports:
+      - 8080:8080
+      - 80:80
+```
 
 ## Configuration
 
