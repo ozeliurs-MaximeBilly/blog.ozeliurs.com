@@ -21,7 +21,8 @@ jobs:
         hugo-version: 'latest'
     
     - name: Build
-      run: hugo -d blog
+      # run: hugo -d blog
+      run: hugo mod graph
 
     - name: Delete contents of server folder
       uses: appleboy/ssh-action@master
