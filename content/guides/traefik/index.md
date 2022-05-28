@@ -17,7 +17,7 @@ Le service est composé principalement de 3 parties:
 
 ### Docker Compose
 
-```yml
+```
 version: '3'
 services:
   traefik:
@@ -35,7 +35,7 @@ services:
 
 ### Routage Statique
 
-```yaml
+```
 # Static configuration
 entryPoints:
     unsecure:
