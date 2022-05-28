@@ -29,17 +29,19 @@ image: "mini.jpg"
 
 `$ nano /etc/cloudflared/config.yml`
 
-    tunnel: <Tunnel-UUID>
-    credentials-file: /etc/cloudflared/<Tunnel-UUID>.json
+```yml
+tunnel: <Tunnel-UUID>
+credentials-file: /etc/cloudflared/<Tunnel-UUID>.json
 
-    ingress:
-    - hostname: gitlab.example.com
-        service: http://localhost:80
-        originRequest:
-            noTLSVerify: true
-    - hostname: gitlab-ssh.exmaple.com
-        service: ssh://localhost:22
-    - service: http_status:404
+ingress:
+- hostname: gitlab.example.com
+    service: http://localhost:80
+    originRequest:
+        noTLSVerify: true
+- hostname: gitlab-ssh.exmaple.com
+    service: ssh://localhost:22
+- service: http_status:404
+```
 
 ## Valider les règles ingress
 
