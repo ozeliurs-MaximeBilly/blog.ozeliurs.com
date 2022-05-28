@@ -1,6 +1,6 @@
 ---
 title: "Installer Raspberry PI OS en mode \"headless\""
-date: 2022-05-28T21:03:00+02:00
+date: 2022-05-28T08:00:00+02:00
 draft: false
 image: "mini.jpg"
 ---
