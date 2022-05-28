@@ -34,17 +34,17 @@ Premièrement, on génère un mot de passe:
 
 Ensuite on ajoute notre utilisateur et le mot de passe crypté dans le fichier "userconf.txt".
 
-`echo "<username>:<encrypted>\n" > userconf.txt`
+`nano userconf.txt`
+
+`<username>:<encrypted>`
 
 Si vous voulez garder la configuration historique cela donne:
 
-```
-echo "pi:$1$f8sh.ZdQ$ZXLukCk6ullHEciw9iumf." > userconf.txt
-```
+`pi:$1$f8sh.ZdQ$ZXLukCk6ullHEciw9iumf.`
 
 ### Configuration du wifi (optionnel)
 
-Modifiez le fichier "" avec la configuration ci dessous (en rmplacant les valeurs par vos propres):
+Modifiez le fichier `wpa_supplicant.conf` avec la configuration ci dessous (en rmplacant les valeurs par vos propres):
 
 ```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
