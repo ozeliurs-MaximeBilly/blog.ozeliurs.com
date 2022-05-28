@@ -40,7 +40,9 @@ Ensuite on ajoute notre utilisateur et le mot de passe crypté dans le fichier "
 
 Si vous voulez garder la configuration historique cela donne:
 
-`pi:$1$f8sh.ZdQ$ZXLukCk6ullHEciw9iumf.`
+```
+pi:$1$f8sh.ZdQ$ZXLukCk6ullHEciw9iumf.
+```
 
 ### Configuration du wifi (optionnel)
 
