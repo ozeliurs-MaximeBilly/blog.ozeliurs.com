@@ -29,7 +29,7 @@ image: "mini.jpg"
 
 `$ nano /etc/cloudflared/config.yml`
 
-```yml
+```
 tunnel: <Tunnel-UUID>
 credentials-file: /etc/cloudflared/<Tunnel-UUID>.json
 
