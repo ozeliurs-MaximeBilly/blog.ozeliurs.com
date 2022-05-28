@@ -42,4 +42,13 @@ jobs:
       with:
         source: "blog/*"
         target: "/var/www"
+
+    - name: Permissions
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.USER }}
+        PORT: ${{ secrets.PORT }}
+        KEY: ${{ secrets.SSHKEY }}
+        script: chmod -R 777 /var/www/blog
         
