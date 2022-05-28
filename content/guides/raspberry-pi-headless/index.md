@@ -39,7 +39,7 @@ Ensuite on ajoute notre utilisateur et le mot de passe crypté dans le fichier "
 Si vous voulez garder la configuration historique cela donne:
 
 ```
-echo "pi:$6$iJB/UcLM9Xzsj.Vw$sfZsqvR3219FA2bAA6utpdONdR27p4QUg/u6uHcCMfVGberamK7TkNLcL76MenFuFsTxm4Zh7j.3lzwmDJ4hp/" > userconf.txt
+echo "pi:$1$f8sh.ZdQ$ZXLukCk6ullHEciw9iumf." > userconf.txt
 ```
 
 ### Configuration du wifi (optionnel)
