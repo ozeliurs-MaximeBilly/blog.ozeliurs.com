@@ -36,11 +36,13 @@ Ensuite on ajoute notre utilisateur et le mot de passe crypté dans le fichier "
 
 `nano userconf.txt`
 
-`<username>:<encrypted>`
+```txt
+<username>:<encrypted>
+```
 
 Si vous voulez garder la configuration historique cela donne:
 
-```
+```txt
 pi:$1$f8sh.ZdQ$ZXLukCk6ullHEciw9iumf.
 ```
 
@@ -48,7 +50,7 @@ pi:$1$f8sh.ZdQ$ZXLukCk6ullHEciw9iumf.
 
 Modifiez le fichier `wpa_supplicant.conf` avec la configuration ci dessous (en rmplacant les valeurs par vos propres):
 
-```
+```txt
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 country=<country>
