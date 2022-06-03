@@ -21,7 +21,7 @@ J'ai choisi Cowrie pour mon Honeypot. On peut facilement l'installer avec un con
 
 ### Docker Compose
 
-```yml
+```
 version: "3"  # optional since v1.27.0
 services:
   cowrie:
