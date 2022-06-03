@@ -31,3 +31,9 @@ services:
     volumes:
       - ./logs:var/lib/cowrie
 ```
+
+## Fin
+
+Et voila votre honeypot est installé et écoute les connections ssh sur le port 2222. Vous devriez le changer pour le port 22 (ssh par défaut).
+
+Les connections sont toutes logguées dans le dossier `./logs/cowrie.log` vous pouvez aussi customiser votre honeypot (voir [la documentation de cowrie](https://cowrie.readthedocs.io/en/latest/)).
