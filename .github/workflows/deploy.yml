@@ -39,7 +39,7 @@ jobs:
         HOST: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USER }}
         PORT: ${{ secrets.PORT }}
-        PASSWORD: ${{ secrets.PASSWORD }}
+        KEY: ${{ secrets.SSHKEY }}
       with:
         source: "blog/*"
         target: "/var/www"
