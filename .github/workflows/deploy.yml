@@ -31,7 +31,7 @@ jobs:
         USERNAME: ${{ secrets.USER }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-        script: rm -rf /var/www/blog
+        script: sudo rm -rf /root/docker-compose/www-blog/www/*
 
     - name: Copy repository contents via scp
       uses: appleboy/scp-action@master
@@ -42,7 +42,7 @@ jobs:
         KEY: ${{ secrets.SSHKEY }}
       with:
         source: "blog/*"
-        target: "/var/www"
+        target: "/tmp"
 
     - name: Permissions
       uses: appleboy/ssh-action@master
@@ -51,5 +51,5 @@ jobs:
         USERNAME: ${{ secrets.USER }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-        script: chmod -R 777 /var/www/blog
+        script: sudo mv /tmp/blog/* /root/docker-compose/www-blog/www/ && chmod -R 777 /root/docker-compose/www-blog/www
         
