@@ -51,5 +51,5 @@ jobs:
         USERNAME: ${{ secrets.USER }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-        script: sudo mv /tmp/blog/* /root/docker-compose/www-blog/www/ && chmod -R 777 /root/docker-compose/www-blog/www
+        script: sudo mv /tmp/blog/* /root/docker-compose/www-blog/www/ && sudo chmod -R 777 /root/docker-compose/www-blog/www
         
