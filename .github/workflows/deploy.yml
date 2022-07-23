@@ -16,7 +16,7 @@ jobs:
       run: git submodule update --init --recursive
     
     - name: Add tracking
-      run: echo '<img referrerpolicy="no-referrer-when-downgrade" src="https://matomo.ozeliurs.com/matomo.php?idsite=2&amp;rec=1" style="border:0" alt="" />' >> themes/hugo-theme-stack/layouts/partials/footer/custom.html
+      run: echo '<img referrerpolicy="no-referrer-when-downgrade" src="https://matomo.ozeliurs.com/matomo.php?idsite=2&amp;rec=1" style="border:0" alt="" />' >> themes/hugo-theme-stack/layouts/partials/sidebar/left.html
 
     - name: Setup hugo
       uses: peaceiris/actions-hugo@v2
